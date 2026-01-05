@@ -1,0 +1,15 @@
+[mgr]
+# Set the background to match your wallpaper-derived color
+cwd = { fg = "#ffb3b0" }
+hovered = { fg = "#1a1111", bg = "#ffb3b0" }
+preview_hovered = { underline = true }
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#1a1111", bg = "#1a1111" }
+
+# Standard color bar components
+mode_normal = { fg = "#1a1111", bg = "#ffb3b0", bold = true }
+mode_select = { fg = "#1a1111", bg = "#e7bdba", bold = true }
+

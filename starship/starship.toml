@@ -1,0 +1,89 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+format = """
+$shell\
+$username\
+$directory\
+$line_break\
+$character\
+"""
+
+right_format = """
+$nodejs\
+$python\
+$rust\
+$solidity\
+$zig\
+"""
+
+[shell]
+bash_indicator = ''
+fish_indicator = '󰈺'
+disabled = false
+
+[username]
+format = '[$user]($style) '
+show_always = true
+
+[directory]
+truncation_length = 4
+truncate_to_repo = true
+format = '[$path]($style) '
+disabled = false
+use_os_path_sep = true
+home_symbol = '󰋞'
+
+[line_break]
+disabled = false
+
+[character]
+format = '󰘍'
+success_symbol = ''
+error_symbol = ''
+
+[nodejs]
+format = 'via [$symbol($version )]($style)'
+version_format = 'v${raw}'
+symbol = ' '
+detect_extensions = ['js', 'mjs', 'cjs', 'ts', 'mts', 'cts']
+detect_files = ['package.json', '.node-version', '.nvmrc']
+detect_folders = ['node_modules']
+
+[python]
+format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+version_format = 'v${raw}'
+symbol = ' '
+pyenv_version_name = true
+pyenv_prefix = 'pyenv'
+detect_extensions = ['py', 'ipynb']
+detect_files = ['.python-version', 'Pipfile', '__init__.py', 'pyproject.toml', 'requirements.txt', 'setup.py', 'tox.ini']
+disabled = false
+
+[rust]
+format = 'via [$symbol($version )]($style)'
+version_format = 'v${raw}'
+symbol = ' '
+detect_extensions = ['rs']
+detect_files = ['Cargo.toml']
+disabled = false
+
+[solidity]
+format = 'via [$symbol($version )]($style)'
+version_format = 'v${major}.${minor}.${patch}'
+symbol = ' '
+compiler = ['solc']
+detect_extensions = ['sol']
+detect_files = ["*.sol"]
+detect_folders = []
+disabled = false
+
+[zig]
+format = 'via [$symbol($version )]($style)'
+version_format = 'v${raw}'
+symbol = ' '
+detect_extensions = ['zig']
+disabled = false

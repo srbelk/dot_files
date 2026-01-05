@@ -1,0 +1,15 @@
+[manager]
+# Set the background to match your wallpaper-derived color
+cwd = { fg = "{{ colors.primary.default.hex }}" }
+hovered = { fg = "{{ colors.background.default.hex }}", bg = "{{ colors.primary.default.hex }}" }
+preview_hovered = { underline = true }
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "{{ colors.surface.default.hex }}", bg = "{{ colors.surface.default.hex }}" }
+
+# Standard color bar components
+mode_normal = { fg = "{{ colors.background.default.hex }}", bg = "{{ colors.primary.default.hex }}", bold = true }
+mode_select = { fg = "{{ colors.background.default.hex }}", bg = "{{ colors.secondary.default.hex }}", bold = true }
+

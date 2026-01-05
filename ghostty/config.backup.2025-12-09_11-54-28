@@ -1,0 +1,15 @@
+font-family = "CaskaydiaCoveNerdFont"
+font-size = 18
+font-feature = "liga"
+
+theme = Gruvbox Material Dark
+
+cursor-style = block
+mouse-hide-while-typing = true
+
+background-opacity = .75
+window-decoration = none
+
+shell-integration = fish
+
+

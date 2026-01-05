@@ -1,0 +1,59 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "small",        // Logo type: auto, builtin, small, file, etc.
+    "source": "arch",      // Built-in logo name or file path
+    "width": 12,           // Width in characters
+    "height": 6,          // Height in characters
+    "padding": {
+        "top": 2,          // Top padding
+        "left": 4,         // Left padding
+        "right": 0        // Right padding
+    }
+  },
+
+  "display": {
+    "separator": ": ",     // Separator between keys and values
+    "key": {
+        "width": 12,       // Aligns keys to this width
+        "type": "both"     // string, icon, both, or none
+    },
+    "bar": {
+        "width": 10,       // Width of percentage bars
+        "char": {
+            "elapsed": "■", // Character for elapsed portion
+            "total": "-"    // Character for total portion
+        }
+    },
+    "percent": {
+        "type": 3         // 1=number, 2=bar, 3=both, 9=colored number
+    }
+  },
+
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "kernel",
+    "shell",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "terminal",
+    {
+"type": "cpu",
+"format": "{name} ({cores-physical}) @ {freq-max}"
+    },
+    {
+"type": "gpu",
+"format": "{vendor} {name}",
+"hideType": "integrated"
+    },
+    "memory",
+    "break",
+    "colors"
+  ]
+}
+

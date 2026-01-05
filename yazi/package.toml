@@ -1,0 +1,12 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "19dc890"
+hash = "5b2eb0cc2050cec1e4de83cfa51a5b90"
+
+[[plugin.deps]]
+use = "Rolv-Apneseth/starship"
+rev = "eca1861"
+hash = "e519d894e94ded741e06aae4d4775981"
+
+[flavor]
+deps = []
