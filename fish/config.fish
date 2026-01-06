@@ -6,12 +6,12 @@ set -gx PATH $PATH ~/.local/bin
 
 set -gx EDITOR nvim
 
- #Yazi shell wrapper	
+#Yazi shell wrapper	
 function y
     set tmp (mktemp -t "yazi-cwd.XXXXXX")
     yazi $argv --cwd-file="$tmp"
-    if read -z cwd < "$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
-    builtin cd -- "$cwd"
+    if read -z cwd <"$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+        builtin cd -- "$cwd"
     end
     rm -f -- "$tmp"
 end
@@ -23,5 +23,7 @@ if status is-interactive
     fastfetch
 
     alias ls 'lsd -a'
-    
-   end
+
+    alias ff fastfetch
+
+end
