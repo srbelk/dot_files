@@ -1,11 +1,14 @@
 # Font Configuration
-font-size = 12
+font-size = 18
+font-family  = "Iosevka Nerd Font"
+font-feature = "+liga" 
+font-feature = "+calt"
 
 # Window Configuration
 window-decoration = false
 window-padding-x = 12
 window-padding-y = 12
-background-opacity = 1.0
+background-opacity = .75
 background-blur-radius = 32
 
 # Cursor Configuration
@@ -19,15 +22,20 @@ scrollback-limit = 3023
 mouse-hide-while-typing = true
 copy-on-select = false
 confirm-close-surface = false
+window-new-tab-position = end
 
-# Disable in-app Ghostty toast notifications
-app-notifications = false
+# Disable annoying copied to clipboard
+app-notifications = no-clipboard-copy,no-config-reload
 
 # Key bindings for common actions
 #keybind = ctrl+c=copy_to_clipboard
 #keybind = ctrl+v=paste_from_clipboard
 keybind = ctrl+shift+n=new_window
 keybind = ctrl+t=new_tab
+keybind = ctrl+1=goto_tab:1
+keybind = ctrl+2=goto_tab:2
+keybind = ctrl+3=goto_tab:3
+keybind = ctrl+4=goto_tab:4
 keybind = ctrl+plus=increase_font_size:1
 keybind = ctrl+minus=decrease_font_size:1
 keybind = ctrl+zero=reset_font_size

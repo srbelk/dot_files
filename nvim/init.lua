@@ -18,3 +18,7 @@ vim.diagnostic.config({
 	-- Sort diagnostics by severity
 	severity_sort = true,
 })
+
+vim.opt.termguicolors = true
+
+vim.cmd.colorscheme("dms")

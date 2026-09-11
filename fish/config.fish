@@ -27,3 +27,8 @@ if status is-interactive
     alias ff fastfetch
 
 end
+
+fish_add_path -a "/home/belk/.foundry/bin"
+
+# Generated for envman. Do not edit.
+test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish

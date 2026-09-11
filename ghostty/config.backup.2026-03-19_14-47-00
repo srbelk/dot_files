@@ -1,12 +1,15 @@
 # Font Configuration
-font-size = 12
+font-size = 18
+font-family  = "Lilex Nerd Font"
+font-feature = "+liga" 
+font-feature = "+calt"
 
 # Window Configuration
 window-decoration = false
 window-padding-x = 12
 window-padding-y = 12
-background-opacity = 1.0
-background-blur-radius = 32
+background-opacity = .75
+background-blur-radius = 15
 
 # Cursor Configuration
 cursor-style = block
@@ -20,8 +23,8 @@ mouse-hide-while-typing = true
 copy-on-select = false
 confirm-close-surface = false
 
-# Disable in-app Ghostty toast notifications
-app-notifications = false
+# Disable annoying copied to clipboard
+app-notifications = no-clipboard-copy,no-config-reload
 
 # Key bindings for common actions
 #keybind = ctrl+c=copy_to_clipboard
